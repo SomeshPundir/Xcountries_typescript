@@ -1,0 +1,14 @@
+.mainWrapper{
+    margin: 10%;
+    margin-top: 2%;
+    background-color: #CDFADB;
+}
+.searchbarAndH1wrapper{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.searchbarAndH1wrapper h1{
+    display: inline-block;
+}
+

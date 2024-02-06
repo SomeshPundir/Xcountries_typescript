@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// App.tsx
+import React, { useState } from 'react';
+import styles from './App.module.css';
+import CardCountries from './component/CardCountries';
+import Searchbar from './component/Searchbar';
 
 function App() {
+  const [allData, setAllData] = useState<any[]>([]);
+
+  const handleDataReceived = (data: any[]) => {
+    setAllData(data);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.mainWrapper}>
+      <div className={styles.searchbarAndH1wrapper}>
+        <h1>Countries App</h1>
+        <Searchbar onDataReceived={handleDataReceived} />
+      </div>
+      <CardCountries allData={allData} />
     </div>
   );
 }

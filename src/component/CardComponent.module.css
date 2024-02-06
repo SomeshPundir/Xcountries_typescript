@@ -1,0 +1,54 @@
+.countryMainWrapper {
+    background-color:#FFCF96;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around; /* Adjust as needed */
+}
+
+.lidiv {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 2%; /* Adjust margin as needed */
+    width: 30vw;
+}
+
+.imgeWrapper {
+    background-color: aquamarine;
+    border: solid black;
+    overflow: hidden;
+    width: 30vw;
+}
+
+.imgeWrapper img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Make the image take the full width of its container */
+    height: 30vh;
+}
+
+.locationiconwrpper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.locationiconwrpper img {
+    width: 50px;
+    height: 50px;
+}
+
+.lidiv ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lidiv li {
+    color: azure;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Add any additional styling as needed */
